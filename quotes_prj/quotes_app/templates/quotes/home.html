@@ -1,0 +1,14 @@
+<html>
+    <head></head>
+    <body>
+        <h1> List of Contacts </h1>
+        {% block content %}
+            {% for quotes in quotes_list %}
+                <p><strong>First Name: </strong>{{ quotes.first_name }}</p>
+                <p><strong>Last Name: </strong>{{ quotes.last_name }}</p>
+                <p><strong>Quote: </strong>{{ quotes.quote }}</p>
+                <hr>
+            {% endfor %}
+        {% endblock %}
+    </body>
+</html>
